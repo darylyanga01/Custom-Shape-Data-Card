@@ -1,0 +1,199 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Measure",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "properties": {
+                "shape": {
+                    "type": {
+                        "enumeration": [
+                            {
+                                "value": "Circle",
+                                "displayName": "Circle"
+                            },
+                            {
+                                "value": "Ellipse",
+                                "displayName": "Ellipse"
+                            },
+                            {
+                                "value": "Pill",
+                                "displayName": "Pill"
+                            }
+                        ]
+                    }
+                },
+                "circleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "circleBorderColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "calloutValue": {
+            "properties": {
+                "displayUnitsProperty": {
+                    "type":
+                    {
+                        "formatting": {
+                            "labelDisplayUnits": true
+                        }
+                    }
+                },
+                "fontSize": { 
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontBold": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontUnderline": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontItalic": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "lineAlignment": {
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
+                },
+                "decimalPlaces": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "specialSymbol": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "calloutLabel": {
+            "properties": {
+                "labelText": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fontSize": { 
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontBold": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontUnderline": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontItalic": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "lineAlignment": {
+                    "type": {
+                        "formatting": {
+                            "alignment": true
+                        }
+                    }
+                }
+            }
+        }        
+
+    },
+    "dataViewMappings": [
+        {
+            "conditions" : [
+                { "measure" : { "max" : 1 } }
+            ],
+            "single" : {
+                "role" : "measure"
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "Tooltips"
+        ],
+        "supportEnhancedTooltips": true
+    },
+    "privileges": []
+}
